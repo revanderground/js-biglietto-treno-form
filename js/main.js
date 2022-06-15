@@ -18,7 +18,7 @@ generatorButton.addEventListener('click', function(){
     } else if (userAge >= 65) {
         price= price - ((price * 35) / 100);
         price=(Math.round(price * 100)/100).toFixed(2);
-        console.log(`Il prezzo del biglietto scontato del 35% è ${price65Plus}`);
+        console.log(`Il prezzo del biglietto scontato del 35% è ${price}`);
         // Prezzo standard
 
     } else {
