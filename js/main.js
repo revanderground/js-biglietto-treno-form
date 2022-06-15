@@ -7,8 +7,6 @@ generatorButton.addEventListener('click', function(){
     const userDistance = document.getElementById('input-distance').value;
     const userAge = document.getElementById('input-age').value;
 
-
-
     let price = (userDistance * 0.26);
 
     if (userAge < 18){
@@ -27,9 +25,7 @@ generatorButton.addEventListener('click', function(){
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto standard è ${price}`);
     }
-     
-    
-    console.log(`Il prezzo del biglietto è ${price}`);
+
 });
     
 
