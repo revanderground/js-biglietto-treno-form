@@ -15,16 +15,21 @@ generatorButton.addEventListener('click', function(){
         price = price - ((price * 15) / 100);
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto scontato del 15% è ${price}€`);
+        document.querySelector('#output-offerta').innerHTML= ("Biglietto scontato 15%");
+        document.querySelector('#output-costo').innerHTML= (price + "€" );
         // Calcolo con lo sconto del 40% per over65
     } else if (userAge >= 65) {
         price= price - ((price * 35) / 100);
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto scontato del 35% è ${price}€`);
-        document.querySelector('#output-offerta').innerHTML= ("Biglietto scontato");
+        document.querySelector('#output-offerta').innerHTML= ("Biglietto scontato 35%");
+        document.querySelector('#output-costo').innerHTML= (price + "€" );
         // Prezzo standard
     } else {
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto standard è ${price}€`);
+        document.querySelector('#output-offerta').innerHTML= ("Biglietto standard");
+        document.querySelector('#output-costo').innerHTML= (price + "€" );
     }
 
 });
