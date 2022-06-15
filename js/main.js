@@ -6,7 +6,8 @@ generatorButton.addEventListener('click', function(){
     console.log(document.getElementById('input-age').value);
     const userDistance = document.getElementById('input-distance').value;
     const userAge = document.getElementById('input-age').value;
-
+    const userName = document.getElementById('input-name').value;
+    document.querySelector('#output-nome').innerHTML= userName;
     let price = (userDistance * 0.26);
 
     if (userAge < 18){
@@ -19,8 +20,8 @@ generatorButton.addEventListener('click', function(){
         price= price - ((price * 35) / 100);
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto scontato del 35% è ${price}€`);
+        document.querySelector('#output-offerta').innerHTML= ("Biglietto scontato");
         // Prezzo standard
-
     } else {
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto standard è ${price}€`);

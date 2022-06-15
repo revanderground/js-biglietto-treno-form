@@ -5,6 +5,14 @@ body{
     background-color: white;
 }
 
+.bg-lightblue{
+    background-color: rgb(176, 241, 255);
+}
+
+.bg.blue{
+    background-color: rgba(0, 217, 255, 0.651);
+}
+
 .border-radius{
     border-radius: 1.5rem;
 }
@@ -24,4 +32,18 @@ h1{
     color: rgb(0, 51, 138);
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.titlebottom1{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.titlebottom2{
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.height-bottombox{
+    height:200px;
 }
