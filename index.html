@@ -14,41 +14,53 @@
 <body>
 
     <h1 class="text-center p-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    
+    <div class="container bg-white border-radius">
 
-    <div class="container bg-white d-flex space-around">
-        <div class="name mx-5">
-            <div class="titleinfo">Nome Cognome</div>
-            <div class="mb-3">
-                <label for="input-name" class="form-label"></label>
-                <input type="text" class="form-control" id="input-name">
+        <div class="container d-flex flex-wrap space-around">
+            <div class="name col-3 mx-5">
+                <div class="titleinfo pt-2">Nome Cognome</div>
+                <div class="mb-3">
+                    <label for="input-name" class="form-label"></label>
+                    <input type="text" class="form-control" id="input-name">
+                </div>
             </div>
-        </div>
-
-        <div class="distance mx-5">
-            <div class="titleinfo">Km da percorrere</div>
-            <div class="mb-3">
-                <label for="input-distance" class="form-label"></label>
-                <input type="text" class="form-control" id="input-distance">
+    
+            <div class="distance col-2 mx-5">
+                <div class="titleinfo pt-2">Km da percorrere</div>
+                <div class="mb-3">
+                    <label for="input-distance" class="form-label"></label>
+                    <input type="text" class="form-control" id="input-distance">
+                </div>
+    
             </div>
-
-        </div>
-
-        <div class="age mx-5">
-            <div class="titleinfo">Fascia d'età</div>
-            <div class="mb-3">
-                <label for="input-age" class="form-label"></label>
-                <input type="text" class="form-control" id="input-age">
+    
+            <div class="age col-2 mx-5">
+                <div class="titleinfo pt-2">Fascia d'età</div>
+                <div class="mb-3">
+                    <label for="input-age" class="form-label"></label>
+                    <input type="text" class="form-control" id="input-age">
+                </div>
             </div>
+    
+        </div>    
+    
+        <div class="container d-flex justify-content-center">
+            <button class="my-3" id="generator-button">Genera</button>
+
         </div>
-    </div>    
-
-    <div class="container bg-white d-flex justify-content-center">
-        <button id="generator-button">Genera</button>
-
 
     </div>
     
     <h1 class="text-center p-3">IL TUO BIGLIETTO</h1>
+
+    <div class="container col-12 bg-white border-radius">
+        <div class="col-3">
+            NOME PASSEGGERO
+        </div>
+
+    </div>
+
 
 
 

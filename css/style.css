@@ -5,6 +5,11 @@ body{
     background-color: white;
 }
 
+.border-radius{
+    border-radius: 1.5rem;
+}
+
+
 .space-around{
     justify-content: space-around;
 }
