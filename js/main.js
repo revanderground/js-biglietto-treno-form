@@ -13,7 +13,7 @@ generatorButton.addEventListener('click', function(){
         // Calcolo con lo sconto del 15% per minorenni
         price = price - ((price * 15) / 100);
         price=(Math.round(price * 100)/100).toFixed(2);
-        console.log(`Il prezzo del biglietto scontato del 20% è ${price}€`);
+        console.log(`Il prezzo del biglietto scontato del 15% è ${price}€`);
         // Calcolo con lo sconto del 40% per over65
     } else if (userAge >= 65) {
         price= price - ((price * 35) / 100);
