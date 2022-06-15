@@ -17,6 +17,8 @@ generatorButton.addEventListener('click', function(){
         console.log(`Il prezzo del biglietto scontato del 15% è ${price}€`);
         document.querySelector('#output-offerta').innerHTML= ("Biglietto scontato 15%");
         document.querySelector('#output-costo').innerHTML= (price + "€" );
+        document.querySelector('#output-carrozza').innerHTML= Math.floor(Math.random() * 10) + 1;
+        document.querySelector('#output-codice').innerHTML= Math.floor(Math.random() * 99999) + 1;
         // Calcolo con lo sconto del 40% per over65
     } else if (userAge >= 65) {
         price= price - ((price * 35) / 100);
@@ -24,12 +26,16 @@ generatorButton.addEventListener('click', function(){
         console.log(`Il prezzo del biglietto scontato del 35% è ${price}€`);
         document.querySelector('#output-offerta').innerHTML= ("Biglietto scontato 35%");
         document.querySelector('#output-costo').innerHTML= (price + "€" );
+        document.querySelector('#output-carrozza').innerHTML= Math.floor(Math.random() * 10) + 1;
+        document.querySelector('#output-codice').innerHTML= Math.floor(Math.random() * 99999) + 1;
         // Prezzo standard
     } else {
         price=(Math.round(price * 100)/100).toFixed(2);
         console.log(`Il prezzo del biglietto standard è ${price}€`);
         document.querySelector('#output-offerta').innerHTML= ("Biglietto standard");
         document.querySelector('#output-costo').innerHTML= (price + "€" );
+        document.querySelector('#output-carrozza').innerHTML= Math.floor(Math.random() * 10) + 1;
+        document.querySelector('#output-codice').innerHTML= Math.floor(Math.random() * 99999) + 1;
     }
 
 });
